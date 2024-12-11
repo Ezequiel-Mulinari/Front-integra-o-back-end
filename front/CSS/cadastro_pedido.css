@@ -1,0 +1,35 @@
+/* cadastro_pedido.css */
+
+.content {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form .form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  form select {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  form button {
+    width: 100px;
+    margin-right: 10px;
+  }
+  

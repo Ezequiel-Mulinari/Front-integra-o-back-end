@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/lista_pedido.css">
+  <title>Listagem de Pedidos</title>
+</head>
+<body>
+  <!-- Menu Centralizado -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white fs-4" href="lista_cliente.html">Clientes</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white fs-4" href="lista_pedido.html">Pedidos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Pedidos</h1>
+    
+    <!-- Campo de Busca -->
+    <div class="mb-3">
+      <input type="text" class="form-control" id="search" placeholder="Buscar por descrição ou status">
+    </div>
+    
+    <!-- Tabela de Pedidos -->
+    <table class="table table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Descrição</th>
+          <th>Valor</th>
+          <th>Status</th>
+          <th>Cliente</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="pedidos-table-body">
+        <!-- As linhas serão inseridas dinamicamente via JavaScript -->
+      </tbody>
+    </table>
+    
+    <!-- Botão para Novo Pedido -->
+    <a href="cadastro_pedido.html" class="btn btn-success">Novo Pedido</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../JS/lista_pedido.js"></script>
+</body>
+</html>

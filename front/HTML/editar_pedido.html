@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/cadastro_pedido.css">
+  <title>Editar Pedido</title>
+</head>
+<body>
+  <!-- Menu Centralizado -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white fs-4" href="lista_cliente.html">Clientes</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white fs-4" href="lista_pedido.html">Pedidos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Formulário de Edição -->
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Editar Pedido</h1>
+    <form id="editar-pedido-form">
+      <!-- Campo para seleção do cliente -->
+      <div class="mb-3">
+        <label for="cliente" class="form-label">Cliente</label>
+        <select class="form-select" id="cliente" required>
+          <option value="" selected disabled>Selecione um cliente</option>
+          <!-- Opções serão inseridas dinamicamente via JavaScript -->
+        </select>
+      </div>
+
+      <!-- Outros campos -->
+      <div class="mb-3">
+        <label for="descricaoPedido" class="form-label">Descrição</label>
+        <input type="text" class="form-control" id="descricaoPedido" placeholder="Descrição do pedido" required>
+      </div>
+      <div class="mb-3">
+        <label for="valorTotal" class="form-label">Valor</label>
+        <input type="number" step="0.01" class="form-control" id="valorTotal" placeholder="Valor total" required>
+      </div>
+      <div class="mb-3">
+        <label for="status" class="form-label">Status</label>
+        <select class="form-select" id="status" required>
+          <option value="PROCESSAMENTO">Em Processamento</option>
+          <option value="ENVIADO">Enviado</option>
+          <option value="ENTREGUE">Entregue</option>
+          <option value="CANCELADO">Cancelado</option>
+        </select>
+      </div>
+
+      <!-- Botões -->
+      <button type="submit" class="btn btn-primary">Atualizar</button>
+      <a href="lista_pedido.html" class="btn btn-secondary">Cancelar</a>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../JS/editar_pedido.js"></script>
+</body>
+</html>

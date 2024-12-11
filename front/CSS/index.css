@@ -1,0 +1,22 @@
+/* index.css */
+
+/* Center content on the page */
+body {
+    justify-content: center; /* Alinha o conteúdo verticalmente */
+  }
+  
+  h1 {
+    color: #343a40;
+    text-align: center;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .container .btn {
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+  
